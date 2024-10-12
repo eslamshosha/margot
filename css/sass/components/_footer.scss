@@ -1,0 +1,131 @@
+footer {
+  padding: 72px 0 0;
+  background-color: $main;
+  position: relative;
+  @include max-767 {
+    padding-top: 40px;
+  }
+}
+.footer-cont {
+  margin-bottom: 40px;
+}
+.footer-logo {
+  width: 100%;
+  max-width: 206px;
+  text-align: start;
+  padding-top: 20px;
+  @include max-767 {
+    max-width: 140px;
+    margin: 0 auto;
+  }
+}
+.nav-foot-cont {
+  text-align: start;
+  padding-top: 20px;
+}
+.nav-foot-header {
+  text-transform: capitalize;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 36px;
+  color: $white;
+  margin-bottom: 33px;
+  text-align: start;
+  @include max-767 {
+    font-size: 24px;
+  }
+}
+.nav-foot li {
+  margin-bottom: 30px;
+  @include max-767 {
+    margin-bottom: 15px;
+  }
+}
+.nav-foot-link {
+  color: $white;
+  font-size: 24px;
+  font-weight: 700;
+  display: inline-flex;
+  text-decoration: none !important;
+  transition: all 0.3s ease-in-out;
+  @include max-767 {
+    font-size: 18px;
+  }
+  &:hover {
+    color: #a4b1bd;
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.social a {
+  text-decoration: none !important;
+}
+a.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 33px;
+  color: $white;
+  transition: all 0.3s ease-in-out;
+}
+a.social-link:hover {
+  color: #a4b1bd;
+}
+.copy-right {
+  font-weight: 500;
+  font-size: 16px;
+  color: #5d6873;
+  padding: 20px 0;
+  border-top: 1px solid #5d6873;
+  text-align: start;
+  @include max-767 {
+    text-align: center;
+  }
+}
+/*                             footer accordion                 */
+.footer-accordion.nav-foot-header {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-accordion {
+  cursor: pointer;
+  width: 100%;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+  padding: 0 15px;
+}
+.news-letter .footer-panel {
+  padding: 0;
+}
+.footer-accordion:after {
+  content: "";
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 900;
+  font-size: 13px;
+  transition: all 0.5s ease-out;
+}
+html[dir="rtl"] .footer-accordion:after {
+  content: "";
+}
+.footer-accordion.active:after {
+  transform: rotate(90deg);
+}
+html[dir="rtl"] .footer-accordion.active:after {
+  transform: rotate(-90deg);
+}
+/*                             footer accordion                 */
