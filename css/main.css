@@ -1722,4 +1722,130 @@ html[dir=rtl] .footer-accordion.active:after {
   transform: rotate(-90deg);
 }
 
-/*                             footer accordion                 *//*# sourceMappingURL=main.css.map */
+/*                             footer accordion                 */
+.project-section {
+  padding: 40px 0 80px;
+}
+@media only screen and (max-width: 767px) {
+  .project-section {
+    padding: 40px 0 60px;
+  }
+}
+.project-section .section-head {
+  font-size: 48px;
+}
+@media only screen and (max-width: 767px) {
+  .project-section .section-head {
+    font-size: 36px;
+  }
+}
+.project-section .gallery-cont {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .project-section .gallery-cont {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .project-section .gallery-cont {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+.project-section .gallery-figure {
+  aspect-ratio: 273/181;
+}
+.project-section .gallery-figure::after {
+  display: none;
+}
+.project-section .gallery:hover img {
+  transform: scale(1.05);
+}
+
+.project-content {
+  gap: 0;
+}
+
+.title-name {
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff1e5;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .title-name {
+    font-size: 20px;
+  }
+}
+
+.project-name {
+  font-weight: 700;
+  font-size: 48px;
+  color: #fff1e5;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 767px) {
+  .project-name {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+}
+
+.project-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 28px;
+}
+@media only screen and (max-width: 767px) {
+  .project-info {
+    margin-bottom: 20px;
+  }
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--white-color);
+  gap: 4px;
+}
+@media only screen and (max-width: 767px) {
+  .project-item {
+    font-size: 20px;
+  }
+}
+
+.main-pargh {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff1e5;
+  margin-bottom: 0;
+  max-width: 635px;
+}
+@media only screen and (max-width: 767px) {
+  .main-pargh {
+    font-size: 15px;
+  }
+}
+
+.blog-main {
+  gap: 0;
+}
+.blog-main .title-name,
+.blog-main .project-name,
+.blog-main .project-item {
+  color: #07213d;
+}
+.blog-main .project-name {
+  margin-bottom: 24px;
+}
+
+.content-section {
+  margin-top: 40px;
+}/*# sourceMappingURL=main.css.map */
