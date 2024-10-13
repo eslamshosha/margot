@@ -771,6 +771,11 @@ html[dir=ltr] .progress-bar {
   margin-bottom: 24px;
   text-align: start;
 }
+@media only screen and (max-width: 767px) {
+  .partners-title {
+    font-size: 30px;
+  }
+}
 
 .partners-figure {
   display: flex;
@@ -1243,6 +1248,7 @@ html[dir=ltr] .progress-bar {
 }
 @media only screen and (max-width: 767px) {
   .blog-container {
+    grid-template-columns: 1fr;
     gap: 10px;
   }
 }
@@ -1317,6 +1323,8 @@ html[dir=ltr] .progress-bar {
   position: absolute;
   width: 100%;
   bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 2;
   padding: 0 21px 20px 16px;
   display: flex;
@@ -1325,7 +1333,7 @@ html[dir=ltr] .progress-bar {
 }
 @media only screen and (max-width: 767px) {
   .blog-content {
-    padding: 10px;
+    padding: 20px;
   }
 }
 

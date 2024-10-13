@@ -81,6 +81,9 @@
   text-transform: capitalize;
   margin-bottom: 24px;
   text-align: start;
+  @include max-767 {
+    font-size: 30px;
+  }
 }
 .partners-figure {
   display: flex;
@@ -499,6 +502,7 @@
     gap: 20px;
   }
   @include max-767 {
+    grid-template-columns: 1fr;
     gap: 10px;
   }
 }
@@ -570,13 +574,15 @@
   position: absolute;
   width: 100%;
   bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 2;
   padding: 0 21px 20px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   @include max-767 {
-    padding: 10px;
+    padding: 20px;
   }
 }
 .blog-info {

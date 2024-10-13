@@ -159,9 +159,6 @@ $(document).ready(function () {
       });
       a = 1;
     }
-    if ($(window).width() <= 767) {
-      window.onload(countFunction());
-    }
     $(window).scroll(function () {
       var oTop = $(".counter-cont").offset().top - window.innerHeight;
       if (a == 0 && $(window).scrollTop() > oTop) {
