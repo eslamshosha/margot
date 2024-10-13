@@ -201,9 +201,12 @@ $(document).ready(function () {
 //mixitup
 // var mixer = mixitup('.container');
 var containerEl = document.querySelector("#mix-container");
-
-var mixer = mixitup(containerEl, {
-  animation: {
-    effects: "fade scale(0.5)",
-  },
-});
+const mixExists = document.getElementsByClassName("mix-btn-cont").length > 0;
+if (mixExists) {
+  var mixer = mixitup(containerEl, {
+    animation: {
+      effects: "fade scale(0.5)",
+    },
+  });
+} else {
+}
